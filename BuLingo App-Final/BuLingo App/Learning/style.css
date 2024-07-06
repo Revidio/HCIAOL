@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/parabolic-ellipse.svg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a
+{
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.fa-school
+{
+    color: rgb(20, 133, 225);
+}
+
+.nav-item :hover
+{
+    color: rgb(20, 133, 225);
+}
+
+.profile-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.learning-section {
+    text-align: center;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.learning-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.learning-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.learning-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.learning-item h3 {
+    margin-top: 0;
+}
+
+.learning-item button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}

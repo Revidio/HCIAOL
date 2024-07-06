@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/parabolic-ellipse.svg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    margin-bottom: auto;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a
+{
+    margin-right: 20px;
+}
+
+.header h1
+{
+    align-items: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.register-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.register-link .icon {
+    margin-left: 5px;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    margin-bottom: 10px;
+}
+
+.forgot-password a {
+    color: blue;
+    text-decoration: none;
+}
+
+.login-button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}

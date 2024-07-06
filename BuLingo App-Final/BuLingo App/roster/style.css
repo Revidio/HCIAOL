@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/parabolic-ellipse.svg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav .fa-school
+{
+    color: rgb(20, 133, 225);
+}
+
+.nav-item :hover
+{
+    color: rgb(20, 133, 225);
+}
+
+.profile-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.class-roster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 60px;
+}
+
+.class-icon {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    font-size: 100px;
+    color: black;
+}
+
+.class-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.class-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.class-item h3 {
+    margin: 0;
+}
+
+.class-item p {
+    margin: 5px 0 10px;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress-text {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.join-class {
+    background-color: #00bfff;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.join-class:hover {
+    background-color: #009acd;
+}
+
+@media screen and (max-width: 768px) {
+    .class-roster {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .class-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .class-list {
+        width: 100%;
+    }
+
+    .class-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* For tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .class-roster {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .class-list {
+        width: 100%;
+    }
+
+    .nav {
+        justify-content: space-around;
+    }
+
+    .class-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
