@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/parabolic-ellipse.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+header a
+{
+    margin-right: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-family: 'Irish Grover', system-ui;
+}
+
+.fa-book
+{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Irish Grover', system-ui;
+}
+
+.banner {
+    padding: 20px;
+    margin-top: 15vh;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Irish Grover', system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.banner-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    width: 600px;
+    height: 350px;
+    font-size: 44px;
+}
+
+.fa-globe {
+    font-size: 400px;
+    color: black;
+    margin-left: 200px;
+}
+
+.content {
+    padding: 20px;
+    font-family: 'Irish Grover', system-ui;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.offer, .faq {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 40px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.offer h3, .faq h3 {
+    margin-top: 0;
+}
+
+.offer-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.offer-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 40px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.faq-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-family: 'Irish Grover', system-ui;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    .banner-content {
+        flex-direction: row;
+    }
+
+    .fa-globe {
+        font-size: 10em;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-box {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .fa-globe {
+        font-size: 6em;
+        margin-left: 0;
+    }
+
+    .offer-item, .faq-item {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-box {
+        font-size: 1.2em;
+    }
+
+    .fa-globe {
+        font-size: 4em;
+    }
+}
